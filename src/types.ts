@@ -14,6 +14,7 @@ export enum Platform {
 export enum GameEngine {
   Unity = "Unity",
   Unreal = "Unreal",
+  Custom = "Custom",
 }
 
 export enum MediaType {
@@ -32,11 +33,8 @@ export interface AboutMeData {
   description: string;
   introduction: string;
   image: string;
-  cvUri: string;
   links: {
     github: string;
-    itchIO: string;
-    linkedIn: string;
   };
 }
 
