@@ -33,8 +33,11 @@ export interface AboutMeData {
   description: string;
   introduction: string;
   image: string;
+  cvUri: string;
   links: {
-    github: string;
+      github: string;
+      itchIO: string;
+      linkedIn: string;
   };
 }
 

@@ -170,7 +170,9 @@ const GameMedia: React.FC<GameMediaProps> = ({ media }) => {
               <ThumbnailWrapper key={index}>
                 <Thumbnail
                   id={`thumbnail${index}`}
-                  ref={(el) => (thumbnailRefs.current[index] = el)}
+                  ref = {(el: HTMLImageElement | null) =>
+                  (thumbnailRefs.current[index] = el)
+                  }
                   src={thumbnailSrc}
                   $isSelected={index === currentIndex}
                   onClick={() => handleThumbnailClick(index)}

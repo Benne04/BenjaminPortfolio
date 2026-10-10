@@ -88,12 +88,16 @@ const ContactMe: React.FC = () => {
           type="text"
           placeholder="Your Name"
           value={name}
-          onChange={(e) => setName(e.target.value)}
+            onChange = {(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+            setMessage(e.target.value)
+            }
         />
         <TextArea
           placeholder="Your Message"
           value={message}
-          onChange={(e) => setMessage(e.target.value)}
+            onChange = {(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+            setMessage(e.target.value)
+            }
         />
         <Button onClick={handleSubmit}>Send via WhatsApp</Button>
       </ContactContainer>

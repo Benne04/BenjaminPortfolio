@@ -3,11 +3,14 @@ import { AboutMeData, Game, GameEngine, LinkImageSource, MediaType, Platform } f
 export const PersonalInfo: AboutMeData = {
   name: "Benjamin Ahola",
   role: "Student",
-    introduction: "Aspiring game developer with a passion for creating interactive experiences. i Specialize in developing games using Unity and Unreal Engine 5",
+    introduction: "Aspiring game developer with a passion for creating interactive experiences. I specialize in developing games using Unity and Unreal Engine 5",
     description: "Hey, i'm Benjamin! i've been gaming my whole life, and making games has always interested me. I Recently started to go all in and decided to go a full 2 year eduction within game development and have already learned so much. My goal is to create games that brings pure enjoyment while playing. Right now, I’m looking to join a company where I can sharpen my skills, learn from others, and build some awesome games.",
-  image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/Profile.jpg`,
+    cvUri: `${process.env.PUBLIC_URL}/files/my_cv.pdf`,
   links: {
     github: "https://github.com/Benne04",
+    itchIO: "",
+    linkedIn: "",
   }
 };
 
@@ -62,14 +65,17 @@ export const games: Game[] = [
     name: "ParkourSystemDEMO",
       description: "A 5 week solo project where i wanted to make a parkour system in UE5. Possibly to use in future projects",
       genres: ["parkour", "3D"],
-    platforms: [Platform.Android],
-    engine: GameEngine.Unity,
+    platforms: [Platform.Windows],
+    engine: GameEngine.Unreal,
     links: [
         { source: LinkImageSource.ItchIo, url: "https://yrgo.itch.io/go-my-scarab" },
     ],
-    media: [
-        { source: "https://youtu.be/4IrGfANTlb4", type: MediaType.YouTube },
-    ],
+          media: [
+              {
+                  source: "https://www.youtube.com/embed/4IrGfANTlb4",
+                  type: MediaType.YouTube,
+              },
+          ],
   },
      {
       name: "VRMechHorror",
@@ -88,17 +94,17 @@ export const games: Game[] = [
   },
       {
       name: "SokobanGame",
-      description: "7 week Project to make a Sokoban puzzle game with a custom sdl3 engine ",
+      description: "7 week Project to make a Sokoban puzzle game with a custom sdl3 engine. Instead of being able to just push boxes around whenever you need to store inputs into each movable object and then release all inputs att once where all boxes will move at the same time.",
       genres: ["Horror", "VR", "3D"],
     platforms: [Platform.Android],
     engine: GameEngine.Custom,
           links: [
-              { source: LinkImageSource.ItchIo, url: "https://yrgo.itch.io/go-my-scarab" },
+              { source: LinkImageSource.ItchIo, url: "" },
           ],
     media: [
-        { source: "/images/games/VRMechGame/VRMechGame1.png", type: MediaType.Image },
-        { source: "/images/games/VRMechGame/VRMechGame2.png", type: MediaType.Image },
-        { source: "/images/games/VRMechGame/VRMechGame3.png", type: MediaType.Image },
+        { source: "/images/games/SokobanGame/SDLGame1.png", type: MediaType.Image },
+        { source: "/images/games/SokobanGame/SDLGame2.png", type: MediaType.Image },
+        { source: "/images/games/SokobanGame/SDLGame3.png", type: MediaType.Image },
     ],
   },
 ];
