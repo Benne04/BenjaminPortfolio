@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
-    "\\public\\images",
-    "\\public\\images\\logos",
-    "\\src"
+    "\\src",
+    "\\src\\Components",
+    "\\src\\Pages"
   ],
-  "SelectedNode": "\\public\\images",
+  "SelectedNode": "\\src\\Pages\\ContactPage.tsx",
   "PreviewInSolutionExplorer": false
 }

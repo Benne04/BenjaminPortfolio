@@ -10,17 +10,7 @@ const Container = styled(Column)`
   text-align: center;
 `;
 
-const ProfileImage = styled.img`
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 5px solid rgb(238, 231, 166);
-
-  @media (max-width: 768px) {
-    width: 100px;
-    height: 100px;
-  }
-`;
+const ProfileImage = styled.img` width: 150px; height: 150px; object-fit: cover; object-position: center; border-radius: 50%; border: 5px solid rgb(238, 231, 166); display: block; max-width: 100%; @media (max-width: 768px) { width: 120px; height: 120px; } `;
 
 const AboutText = styled.p`
   line-height: 1.6;
@@ -55,9 +45,6 @@ const AboutMe: React.FC = () => {
       <AboutText>
        {PersonalInfo.description}
       </AboutText>
-      <CVButton href={`${PersonalInfo.cvUri}`} download>
-        Download My CV
-      </CVButton>
     </Container>
   );
 };

@@ -25,8 +25,10 @@ const GameTitle = styled.h1`
 const GameDescription = styled.p`
   margin: 0;
   font-size: 1.5rem;
+  white-space: pre-line;
+  line-height: 1.6;
 
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 1rem;
   }
 `;

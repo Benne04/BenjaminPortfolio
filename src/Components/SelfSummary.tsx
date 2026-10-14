@@ -34,10 +34,13 @@ const Description = styled.p`
 `;
 
 const Logo = styled.img`
+  width: 90px;
   height: 90px;
+  object-fit: contain;
   margin-right: 2vw;
 
   @media (max-width: 768px) {
+    width: 50px;
     height: 50px;
   }
 `;
@@ -48,13 +51,12 @@ const SelfSummary: React.FC = () => {
     <SelfSummaryContainer>
       <TopRow>
         <Row>
-          <Logo src={`${process.env.PUBLIC_URL}/favicon.ico`} />
+      <Logo src= {`${process.env.PUBLIC_URL}/images/Logo2.png`} />
           <Title>{PersonalInfo.name}</Title>
         </Row>
         <Row>
           <LogoButton source="/images/logos/github.png" size={75} margin={12} linkTo={PersonalInfo.links.github} />
           <LogoButton source="/images/logos/linkedIn.png" size={75} margin={12} linkTo={PersonalInfo.links.linkedIn} />
-          <LogoButton source="/images/logos/itch.io.png" size={75} margin={12} linkTo={PersonalInfo.links.itchIO} />
         </Row>
       </TopRow>
       <Description>{PersonalInfo.introduction}</Description>
